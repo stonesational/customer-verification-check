@@ -1,0 +1,29 @@
+<!--
+Description:    Reusable component by all Servicing workflows to Check Auth Level for a Banker/Customer/Workflow combination
+                Uses EAT_CustomerAuthentication component to check if sufficient Customer Authentication is in place
+Attributes:     None
+Methods:        doAuthentication – Perform the authentication check then execute the callback function.
+                closeQuickAction - Closes the current QuickAction Modal Window
+Event Handlers: None
+-->
+<aura:component>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+        
+    <aura:method name="doAuthentication" description="Check Auth Level and increase Auth Level IF needed">
+        <aura:attribute name="callerComponent" type="Aura.Component"/>
+        <aura:attribute name="customerId" type="String" />
+        <aura:attribute name="workflowId" type="String" />
+        <aura:attribute name="callback" type="Function" />
+    </aura:method>
+
+    <div class="c-container">
+        <lightning:layout aura:id="animation">
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+                <div class="custom-box">Checking Auth Status: <lightning:dynamicIcon type="trend" option="up" alternativeText="Trending up"/></div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+    
+    
+
+</aura:component>	
