@@ -1,6 +1,6 @@
 <!--
 Description:    Quick Action on Customer details screen to launch Wire Money Servicing Visual Flow. 
-                Uses EAT_CustomerAuthentication component to check if sufficient Customer Authentication is in place
+                Uses EAT_CustomerAuthentication component to check if sufficient Customer Auth is in place
 Attributes:     recordId – The SF ID for Customer record
                 workflowId – Unique ID for the Wire Money Servicing Workflow
 Event Handlers: None
