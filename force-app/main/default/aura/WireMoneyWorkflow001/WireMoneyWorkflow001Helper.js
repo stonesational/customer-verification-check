@@ -4,9 +4,29 @@
            2) Load a Secondary tab with a Visual Flow or Component
     */
     authenticationResult : function(component, response) {
+        var workspaceAPI = component.find("workspace");
+        //var navService = component.find("navService");
+        var WireMoneyFlowPageRef = {    
+            "type": "standard__navItemPage",
+            "attributes": {
+                 "apiName": "Wire_Money_Example"    
+            }
+        };
+
         if(response.state === "SUCCESS"){
-            var flow = component.find("flowData");
-            flow.startFlow("Wire_Transfer_001");
+            workspaceAPI
+                .getFocusedTabInfo()
+                .then(function(response) {
+                    return workspaceAPI.openSubtab({
+                        parentTabId: response.tabId,
+                        pageReference: WireMoneyFlowPageRef,
+                        focus: true
+                    });
+                })
+                .then(function(subTabId) {
+                    $A.get("e.force:closeQuickAction").fire();
+                    workspaceAPI.focusTab({tabId : subTabId}); 
+                });
 
         } else if (response.state === "FAIL") {
             alert("Authentication Failed"); //TODO: Replace with Toast

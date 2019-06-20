@@ -1,0 +1,6 @@
+# Working around a silly bug that should be fixed by now
+AppSwitcher.appMenu
+
+**/jsconfig.json
+
+**/.eslintrc.json

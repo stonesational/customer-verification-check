@@ -12,6 +12,8 @@ Event Handlers: None
         
         <c:EAT_CustomerAuthentication aura:id="customerAuthenticator" />
 
-        <lightning:flow aura:id="flowData" />
+        <!--lightning:flow aura:id="flowData" /-->
+        <lightning:workspaceAPI aura:id="workspace" />
+        <!--lightning:navigation aura:id="navService"/-->
 
     </aura:component>	
