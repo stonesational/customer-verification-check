@@ -5,7 +5,7 @@
     */
     authenticationResult : function(component, response) {
         var workspaceAPI = component.find("workspace");
-        //var navService = component.find("navService");
+        
         var WireMoneyFlowPageRef = {    
             "type": "standard__navItemPage",
             "attributes": {
@@ -25,7 +25,7 @@
                 })
                 .then(function(subTabId) {
                     $A.get("e.force:closeQuickAction").fire();
-                    workspaceAPI.focusTab({tabId : subTabId}); 
+                    workspaceAPI.focusTab({tabId : subTabId}); //being paranoid about focus
                 });
 
         } else if (response.state === "FAIL") {
