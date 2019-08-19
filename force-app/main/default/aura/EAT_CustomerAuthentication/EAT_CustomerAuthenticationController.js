@@ -14,7 +14,8 @@
         //TODO: Replace with Apex Controller call to EAT/OMNI
         var response = {
             "state" : "SUCCESS",
-            "message" : "All went well"
+            "message" : "All went well",
+            "authSessionId" : component.get("v.authSessionId")
         };
         
         // TODO: Remove. Simulating CheckAuth call time delay 

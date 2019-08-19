@@ -13,6 +13,7 @@ Event Handlers: None
         <aura:attribute name="callerComponent" type="Aura.Component"/>
         <aura:attribute name="customerId" type="String" />
         <aura:attribute name="workflowId" type="String" />
+        <aura:attribute name="authSessionId" type="String" />
         <aura:attribute name="callback" type="Function" />
     </aura:method>
 

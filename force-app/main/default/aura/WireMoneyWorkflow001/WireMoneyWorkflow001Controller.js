@@ -8,6 +8,7 @@
                                                 component.get("v.recordId"), 
                                                 component.get("v.workflowId"), 
                                                 helper.authenticationResult );
+
         
     }
 })
