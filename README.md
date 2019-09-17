@@ -1,7 +1,7 @@
 # Demo/Reference App
 
 ## Demo
-[Quick Overview](https://youtu.be/Xr2uPMCvorY)
+[2 Minute Overview Video](https://youtu.be/Xr2uPMCvorY)
 
 
 ## Dev, Build and Test
