@@ -5,6 +5,10 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>TransactionNavigationController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <custom>false</custom>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
@@ -117,6 +121,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ConvertLeads</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateContentSpace</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -420,7 +428,15 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ManagePropositions</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ManagePvtRptsAndDashbds</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageRecommendationStrategies</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -445,6 +461,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageSolutions</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageSubscriptions</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -608,7 +628,15 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ViewDataLeakageEvents</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ViewEventLogFiles</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewFlowUsageAndFlowEventData</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

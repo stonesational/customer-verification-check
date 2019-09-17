@@ -1,5 +1,5 @@
 <!--
-Description:    Quick Action on Customer details screen to launch Wire Money Servicing Visual Flow. 
+Description:    Quick Action on Customer details screen to launch an M2 Transaction: TravelPlan
                 Uses EAT_CustomerAuthentication component to check if sufficient Customer Auth is in place
                 Uses TransactionNavigation component to launch the Transaction UI
 Attributes:     recordId – The SF ID for Customer record
@@ -7,7 +7,7 @@ Attributes:     recordId – The SF ID for Customer record
 Event Handlers: None
 -->
 <aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
-        <aura:attribute name="transactionId" type="String" default="VisualFlowExample00001" />
+        <aura:attribute name="transactionId" type="String" default="M2WorkflowExample00001" />
 
 		<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
         

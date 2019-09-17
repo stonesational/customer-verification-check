@@ -1,7 +1,4 @@
 ({
-    doInit : function(component, event, helper) {
-        console.log("In EAT_CustomerAuthenticationController.doInit");
-    },
     /*	Calls EAT/OMNI to check if the Customer is sufficiently authenticated to proceed with the workflow
         Passes a response object with state/message attributes into the callback function provided
     */
@@ -15,10 +12,10 @@
         var response = {
             "state" : "SUCCESS",
             "message" : "All went well",
-            "authSessionId" : component.get("v.authSessionId")
+            "authSessionId" : "dummyAuthSessionId" //TODO: Get actual from Service during AuthCheck
         };
         
-        // TODO: Remove. Simulating CheckAuth call time delay 
+        // TODO: Remove. Simulating CheckAuth call with a time delay 
         setTimeout(function() {
             var spinner = component.find('animation');
             $A.util.toggleClass(spinner, 'slds-hide');
