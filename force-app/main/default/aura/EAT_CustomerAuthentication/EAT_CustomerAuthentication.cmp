@@ -7,16 +7,15 @@ Methods:        doAuthentication – Perform the authentication check then execu
 Event Handlers: None
 -->
 <aura:component>
-    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
         
     <aura:method name="doAuthentication" description="Check Auth Level and increase Auth Level IF needed">
         <aura:attribute name="callerComponent" type="Aura.Component"/>
         <aura:attribute name="customerId" type="String" />
         <aura:attribute name="workflowId" type="String" />
-        <aura:attribute name="authSessionId" type="String" />
         <aura:attribute name="callback" type="Function" />
     </aura:method>
 
+    <!-- Animation while Authentication is being checked. Get input from UX -->
     <div class="c-container">
         <lightning:layout aura:id="animation">
             <lightning:layoutItem flexibility="auto" padding="around-small">

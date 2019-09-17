@@ -10,6 +10,9 @@
         let queryStringPrameters = {foo: "bar"}; //In case any additional query string parameters are needed
 
         if(response.state === "SUCCESS"){
+            /*  TODO: Insert parameters to Custom Object for use in ConnectedAppPlugin. Potentially with Lightning Data Services
+                https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/data_service.htm
+            */
             transactionNavigatinService.navigate(component, transactionId, queryStringPrameters); //TODO: make parameters optional
             $A.get("e.force:closeQuickAction").fire();
 

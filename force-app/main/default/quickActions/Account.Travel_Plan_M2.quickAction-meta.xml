@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
     <height>400</height>
-    <label>Wire Transfer (Visual Flow)</label>
-    <lightningComponent>WireMoneyWorkflow001</lightningComponent>
+    <label>Travel Plan (M2)</label>
+    <lightningComponent>TravelPlanTransactionInit</lightningComponent>
     <optionsCreateFeedItem>false</optionsCreateFeedItem>
     <type>LightningComponent</type>
     <width>-100</width>

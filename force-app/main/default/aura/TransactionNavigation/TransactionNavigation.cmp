@@ -1,0 +1,25 @@
+<!--
+Description:    Reusable component by all Servicing workflows to navigate to a Transaction/Workflow
+                The transaction may be within CRV or an external system such as SVP, M2, CIV, etc...
+                Target URL is retrieved from the TTM object based on the transactionID
+Attributes:     None
+Methods:        navigate – Launch the Transaction using the CRV default method. Will be dependent on the target system.
+                generateURL - Return the URL of the Transaction so the client can navigate in a unique manner
+Event Handlers: None
+-->
+<aura:component controller="TransactionNavigationController">
+    <aura:method name="navigate" description="Launch the Transaction using the CRV default method. Will be dependent on the target system">
+        <aura:attribute name="parentComponent" type="Aura.Component"/>
+        <aura:attribute name="transactionId" type="String" />
+        <aura:attribute name="params" type="Object" />
+    </aura:method>
+
+    <aura:method name="generateURL" description="Return the URL of the Transaction so the client can navigate in a unique manner">
+        <aura:attribute name="parentComponent" type="Aura.Component"/>
+        <aura:attribute name="transactionId" type="String" />
+        <aura:attribute name="params" type="Object" />
+    </aura:method>
+
+    <lightning:workspaceAPI aura:id="workspace" />
+
+</aura:component>	
